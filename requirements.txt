@@ -1,0 +1,15 @@
+python-telegram-bot==21.6
+aiohttp==3.10.10
+telethon==1.44.0
+httpx==0.28.1
+tonnelmp==1.2
+amrkt==1.6.0
+# amrkt==1.6.0 hard-pins kurigram==2.2.6 itself (an exact pin, not a range) --
+# don't add an explicit kurigram line here, it'll conflict with that and pip
+# will refuse to resolve anything at all. mrkt_market.py's session-string
+# bootstrap is written against kurigram 2.2.6's actual pyrogram.storage API
+# (MemoryStorage/FileStorage, not the unified SQLiteStorage some other
+# kurigram release has) -- verified directly against 2.2.6, not guessed.
+# portalsmp is no longer used by the active bot/sniper (Portals was
+# dropped from active use), but the module is left in the project in
+# case you want it back -- install it manually if so: pip install portalsmp

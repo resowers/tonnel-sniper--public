@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+
+# Live credentials / session data -- never commit these
+*.session
+*.session-journal
+sniper_state.json
+sniper_history.json
+.env
